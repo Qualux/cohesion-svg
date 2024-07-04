@@ -1,0 +1,40 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "cohesion/svg",
+  "version": "0.1.0",
+  "title": "SVG",
+  "category": "widgets",
+  "icon": "format-image",
+  "description": "Render a single SVG.",
+  "example": {},
+  "supports": {
+    "html": false,
+    "anchor": true
+  },
+  "attributes": {
+    "svgPath": {
+      "type": "string",
+      "default": "fa/solid/address-book.svg"
+    },
+    "svg": {
+      "type": "string"
+    },
+    "styleId": {
+      "type": "string"
+    },
+    "styles": {
+      "type": "object",
+      "default": {
+        "width": "16",
+        "height": "",
+        "fill": "#212121"
+      }
+    }
+  },
+  "textdomain": "cohesion",
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": "file:./style-index.css",
+  "viewScript": "file:./view.js"
+}
